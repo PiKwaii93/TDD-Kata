@@ -50,7 +50,13 @@ public class MainTest {
     @Test
     public void VIII_should_return_8() {
         int result = Main.convertRomanNumeral("VIII");
-        assertThat(result).isEqualTo(7);
+        assertThat(result).isEqualTo(8);
+    }
+    
+    @Test
+    public void IX_should_return_9() {
+        int result = Main.convertRomanNumeral("IX");
+        assertThat(result).isEqualTo(9);
     }
     
     
