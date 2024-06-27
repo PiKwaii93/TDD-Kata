@@ -5,16 +5,14 @@ public class Main {
         System.out.println(convertRomanNumeral("I"));
     }
 
-    public static String convertRomanNumeral(String numeral) {
-        if ("III".equals(numeral)) {
-            return "3";
+    public static int convertRomanNumeral(String numeral) {
+        int result = 0;
+
+        // Parcourir la chaîne de caractères
+        for (int i = 0; i < numeral.length(); i++) {
+            result++;
         }
-        if ("II".equals(numeral)) {
-            return "2";
-        }
-        if ("I".equals(numeral)) {
-            return "1";
-        }
-        return "";
+
+        return result;
     }
 }
