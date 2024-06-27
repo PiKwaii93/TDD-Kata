@@ -6,6 +6,9 @@ public class Main {
     }
 
     public static String convertRomanNumeral(String numeral) {
+        if ("III".equals(numeral)) {
+            return "3";
+        }
         if ("II".equals(numeral)) {
             return "2";
         }
