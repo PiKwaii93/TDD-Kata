@@ -3,23 +3,23 @@ package com.example;
 public class Main {
     public static String convertNumberToRoman(int number) {
         StringBuilder roman = new StringBuilder();
-        if(number == 11){
-            return "XI";
-        }else if(number == 10){
-            return "X";
-        }else if(number == 9){
-            return "IX";
-        }else if(number == 4){
-            return "IV";
-        }else if(number < 5){
-            for (int i = 0; i < number; i++) {
+
+        if(number >= 10){
+            roman.append("X");
+            for (int i = 10; i < number; i++) {
                 roman.append("I");
             }
-        }else if(number == 5){
-            return "V";
-        }else{
+        }else if(number == 9){
+            return "IX";
+        }else if(number >= 5){
             roman.append("V");
             for (int i = 5; i < number; i++) {
+                roman.append("I");
+            }
+        }else if(number == 4){
+            return "IV";
+        }else{
+            for (int i = 0; i < number; i++) {
                 roman.append("I");
             }
         }
