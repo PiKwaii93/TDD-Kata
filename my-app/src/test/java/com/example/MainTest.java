@@ -28,6 +28,12 @@ public class MainTest {
         int result = Main.convertRomanNumeral("IV");
         assertThat(result).isEqualTo(4);
     }
+
+    @Test
+    public void V_should_return_5() {
+        int result = Main.convertRomanNumeral("V");
+        assertThat(result).isEqualTo(5);
+    }
     
     
 }
