@@ -22,6 +22,12 @@ public class MainTest {
         int result = Main.convertRomanNumeral("III");
         assertThat(result).isEqualTo(3);
     }
+
+    @Test
+    public void IV_should_return_4() {
+        int result = Main.convertRomanNumeral("IV");
+        assertThat(result).isEqualTo(4);
+    }
     
     
 }
