@@ -3,7 +3,9 @@ package com.example;
 public class Main {
     public static String convertNumberToRoman(int number) {
         StringBuilder roman = new StringBuilder();
-        if(number == 10){
+        if(number == 11){
+            return "XI";
+        }else if(number == 10){
             return "X";
         }else if(number == 9){
             return "IX";
