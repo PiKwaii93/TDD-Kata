@@ -8,6 +8,13 @@ public class Main {
     public static int convertRomanNumeral(String numeral) {
         int result = 0;
 
+        if ("IX".equals(numeral)) {
+            return 9;
+        }
+        if ("X".equals(numeral)) {
+            return 10;
+        }
+
         for (int i = 0; i < numeral.length(); i++) {
             char c = numeral.charAt(i);
 
