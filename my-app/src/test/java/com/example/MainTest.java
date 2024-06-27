@@ -81,5 +81,11 @@ import static org.assertj.core.api.Assertions.assertThat;
         public void Function_13_should_return_XIII() {
             String result = Main.convertNumberToRoman(13);
             assertThat(result).isEqualTo("XIII");
+        }  
+        
+        @Test
+        public void Function_14_should_return_XIV() {
+            String result = Main.convertNumberToRoman(14);
+            assertThat(result).isEqualTo("XIV");
         }   
 }
