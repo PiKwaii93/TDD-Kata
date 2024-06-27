@@ -34,4 +34,10 @@ import static org.assertj.core.api.Assertions.assertThat;
             String result = Main.convertNumberToRoman(5);
             assertThat(result).isEqualTo("V");
         }   
+        
+        @Test
+        public void Function_6_should_return_VI() {
+            String result = Main.convertNumberToRoman(6);
+            assertThat(result).isEqualTo("VI");
+        }   
 }
