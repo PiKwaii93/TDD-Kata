@@ -4,32 +4,35 @@ public class Main {
     public static String convertNumberToRoman(int number) {
         StringBuilder roman = new StringBuilder();
 
-        if(number == 16){
-            return "XVI";
-        }else if(number == 15){
-            return "XV";
-        }else if(number == 14){
-            return "XIV";
-        }else if(number >= 10){
+        if(number >= 10){
+            int tempNumber = number - 10;
             roman.append("X");
-            for (int i = 10; i < number; i++) {
-                roman.append("I");
-            }
-        }else if(number == 9){
-            return "IX";
-        }else if(number >= 5){
-            roman.append("V");
-            for (int i = 5; i < number; i++) {
-                roman.append("I");
-            }
-        }else if(number == 4){
-            return "IV";
-        }else{
-            for (int i = 0; i < number; i++) {
-                roman.append("I");
-            }
+            roman.append(convertInferiorTo10(tempNumber));
+        } else {
+            roman.append(convertInferiorTo10(number));
         }
         
         return roman.toString();
+    }
+
+    public static String convertInferiorTo10(int numberInferiorTo10) {
+        StringBuilder romanTemp = new StringBuilder();
+        if(numberInferiorTo10 < 10){
+            if(numberInferiorTo10 == 9){
+                romanTemp.append("IX");
+            } else if(numberInferiorTo10 >= 5){
+                romanTemp.append("V");
+                for(int i = 5; i<numberInferiorTo10; i++){
+                    romanTemp.append("I");
+                }
+            } else if(numberInferiorTo10 == 4){
+                romanTemp.append("IV");
+            } else {
+                for(int i = 0; i<numberInferiorTo10; i++){
+                    romanTemp.append("I");
+                }
+            }
+        }
+        return romanTemp.toString();
     }
 }
