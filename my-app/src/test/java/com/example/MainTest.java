@@ -47,5 +47,11 @@ public class MainTest {
         assertThat(result).isEqualTo(7);
     }
     
+    @Test
+    public void VIII_should_return_8() {
+        int result = Main.convertRomanNumeral("VIII");
+        assertThat(result).isEqualTo(7);
+    }
+    
     
 }
