@@ -52,4 +52,10 @@ import static org.assertj.core.api.Assertions.assertThat;
             String result = Main.convertNumberToRoman(8);
             assertThat(result).isEqualTo("VIII");
         }   
+        
+        @Test
+        public void Function_9_should_return_IX() {
+            String result = Main.convertNumberToRoman(9);
+            assertThat(result).isEqualTo("IX");
+        }   
 }
