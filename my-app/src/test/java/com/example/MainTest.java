@@ -22,4 +22,10 @@ import static org.assertj.core.api.Assertions.assertThat;
             String result = Main.convertNumberToRoman(3);
             assertThat(result).isEqualTo("III");
         }   
+
+        @Test
+        public void Function_4_should_return_IV() {
+            String result = Main.convertNumberToRoman(4);
+            assertThat(result).isEqualTo("IV");
+        }   
 }
