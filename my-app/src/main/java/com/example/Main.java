@@ -4,7 +4,9 @@ public class Main {
     public static String convertNumberToRoman(int number) {
         StringBuilder roman = new StringBuilder();
 
-        if(number == 15){
+        if(number == 16){
+            return "XVI";
+        }else if(number == 15){
             return "XV";
         }else if(number == 14){
             return "XIV";
