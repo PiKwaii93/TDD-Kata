@@ -64,4 +64,10 @@ import static org.assertj.core.api.Assertions.assertThat;
             String result = Main.convertNumberToRoman(10);
             assertThat(result).isEqualTo("X");
         }   
+        
+        @Test
+        public void Function_11_should_return_XI() {
+            String result = Main.convertNumberToRoman(11);
+            assertThat(result).isEqualTo("XI");
+        }   
 }
