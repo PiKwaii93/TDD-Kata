@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.example.MainTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s -- in com.example.MainTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.111 s <<< FAILURE! -- in com.example.MainTest
+com.example.MainTest.Function_3_should_return_III -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: "III"
+ but was: ""
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at com.example.MainTest.Function_3_should_return_III(MainTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

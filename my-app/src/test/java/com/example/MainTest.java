@@ -16,4 +16,10 @@ import static org.assertj.core.api.Assertions.assertThat;
             String result = Main.convertNumberToRoman(2);
             assertThat(result).isEqualTo("II");
         }   
+
+        @Test
+        public void Function_3_should_return_III() {
+            String result = Main.convertNumberToRoman(3);
+            assertThat(result).isEqualTo("III");
+        }   
 }
