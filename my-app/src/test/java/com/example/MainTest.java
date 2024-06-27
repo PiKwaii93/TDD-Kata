@@ -16,6 +16,12 @@ public class MainTest {
         String result = Main.convertRomanNumeral("II");
         assertThat(result).isEqualTo("2");
     }
+
+    @Test
+    public void III_should_return_3() {
+        String result = Main.convertRomanNumeral("III");
+        assertThat(result).isEqualTo("3");
+    }
     
     
 }
