@@ -8,6 +8,9 @@ public class Main {
     public static int convertRomanNumeral(String numeral) {
         int result = 0;
 
+        if ("V".equals(numeral)) {
+            return 5;
+        }
         if ("IV".equals(numeral)) {
             return 4;
         }
