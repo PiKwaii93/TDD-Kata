@@ -59,5 +59,11 @@ public class MainTest {
         assertThat(result).isEqualTo(9);
     }
     
+    @Test
+    public void X_should_return_10() {
+        int result = Main.convertRomanNumeral("X");
+        assertThat(result).isEqualTo(10);
+    }
+    
     
 }
