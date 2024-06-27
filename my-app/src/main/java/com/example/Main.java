@@ -8,19 +8,18 @@ public class Main {
     public static int convertRomanNumeral(String numeral) {
         int result = 0;
 
-        if ("VI".equals(numeral)) {
-            return 6;
-        }
-        if ("V".equals(numeral)) {
-            return 5;
-        }
-        if ("IV".equals(numeral)) {
-            return 4;
-        }
-
-        // Parcourir la chaîne de caractères
         for (int i = 0; i < numeral.length(); i++) {
-            result++;
+            char c = numeral.charAt(i);
+
+            if (c == 'I') {
+                if (i + 1 < numeral.length() && numeral.charAt(i + 1) == 'V') {
+                    result -= 1; 
+                } else {
+                    result += 1;
+                }
+            } else if (c == 'V') {
+                result += 5;
+            }
         }
 
         return result;
