@@ -41,5 +41,11 @@ public class MainTest {
         assertThat(result).isEqualTo(6);
     }
     
+    @Test
+    public void VII_should_return_7() {
+        int result = Main.convertRomanNumeral("VII");
+        assertThat(result).isEqualTo(7);
+    }
+    
     
 }
