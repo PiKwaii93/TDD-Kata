@@ -2,6 +2,12 @@ package com.example;
 
 public class Main {
     public static String convertNumberToRoman(int number) {
-        return "I";
+        if (number == 1) {
+            return "I";
+        } else if (number == 2) {
+            return "II";
+        } else {
+            return "";
+        }
     }
 }
