@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.MainTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.097 s <<< FAILURE! -- in com.example.MainTest
-com.example.MainTest.Function_6_should_return_VI -- Time elapsed: 0.009 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-
-expected: "VI"
- but was: "IIIIII"
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at com.example.MainTest.Function_6_should_return_VI(MainTest.java:41)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s -- in com.example.MainTest
